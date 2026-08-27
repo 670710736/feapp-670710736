@@ -13,7 +13,7 @@ function Footer() {
         </div>
         <div>
           <p className="mb-2 font-semibold text-slate-200">ติดต่อ</p>
-          <p>คณะวิศวกรรมศาสตร์ฯ<br />มหาวิทยาลัยศิลปากร</p>
+          <p>คณะวิทยาศาสตร์<br />มหาวิทยาลัยศิลปากร</p>
         </div>
       </div>
       <p className="mt-6 text-center text-xs text-slate-500">

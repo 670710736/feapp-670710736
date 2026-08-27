@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom';
 
+// ฟังก์ชันเลือก class: ถ้าเป็นหน้าปัจจุบัน ให้สีฟ้า + ขีดเส้นใต้
 const linkClass = ({ isActive }) =>
   isActive
     ? 'text-cyan-400 font-semibold underline underline-offset-4'
     : 'text-slate-300 hover:text-cyan-400 transition';
-
 
 function Navbar() {
   return (
@@ -17,12 +17,8 @@ function Navbar() {
         <NavLink to="/movies" className={linkClass}>หนังทั้งหมด</NavLink>
         <NavLink to="/about" className={linkClass}>เกี่ยวกับเรา</NavLink>
       </div>
-      <button className="rounded-lg bg-cyan-600 px-4 py-2 text-sm font-semibold
-                         text-white hover:bg-cyan-700 transition">
-        เข้าสู่ระบบ
-      </button>
     </nav>
   );
 }
 
-export default Navbar;  
+export default Navbar;

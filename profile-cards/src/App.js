@@ -1,30 +1,26 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from './page/home';
-import Movies from './page/movie';
-import About from './page/about';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
-import MovieDetail from './page/moviedetail';
+import Home from './page/Home';
+import About from './page/About';
+import Movies from './page/Movies';
+import MovieDetail from './page/MovieDetail';
+import NotFound from './page/NotFound';
 function App() {
     return (
-        <div className='flex-1'>
-            <Navbar />
-            <main className='flex-1'>
-                <Routes>
-
+        <div className="flex min-h-screen flex-col bg-slate-50">
+            <Navbar />                {/* ← เห็นทุกหน้า */}
+            <main className="flex-1">
+                <Routes>                {/* ← เฉพาะตรงนี้ที่สลับตาม URL */}
                     <Route path="/" element={<Home />} />
-
                     <Route path="/movies" element={<Movies />} />
-
                     <Route path="/about" element={<About />} />
-                    <Route path="/" element={<Home />} />
-                    <Route path="/movies" element={<Movies />} />
                     <Route path="/movies/:id" element={<MovieDetail />} />
-                    <Route path="/about" element={<About />} />
+{/* :id คือตัวแปร — /movies/1, /movies/2, /movies/999 เข้า Route นี้หมด */}
                     <Route path="*" element={<NotFound />} />   {/* ← ดักทุกอย่างที่เหลือ ไว้ล่างสุด */}
                 </Routes>
             </main>
-            <footer />
+            <Footer />                {/* ← เห็นทุกหน้า */}
         </div>
     );
 }
