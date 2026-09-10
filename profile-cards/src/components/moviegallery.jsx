@@ -29,9 +29,9 @@ function MovieGallery() {
       </button>
 
       <div className="mt-4 .flex flex-col gap-6 md:flex-row">
-        {movies.poster && (
-            <img scr = {movies.poster} alt={movies.title}
-            className="mx-auto h-64 rounded-lg onject-cover shdow-md" />
+        {movie.poster && (
+            <img scr = {movie.poster} alt={movie.title}
+            className="mx-auto h-64 rounded-lg object-cover shdow-md" />
         )}
       </div>
 
