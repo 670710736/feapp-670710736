@@ -1,7 +1,6 @@
 import MovieCard from "../components/moviecard";
 import MovieGallery from "../components/moviegallery";
 import { movies } from "../data/data";
-// import MovieGallery from "../components/moviegallery";
 function Home() {
   return (
     <div className="p-8 text-center">

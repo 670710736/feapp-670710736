@@ -28,6 +28,14 @@ function MovieGallery() {
         เรื่องถัดไป
       </button>
 
+      <div className="mt-4 .flex flex-col gap-6 md:flex-row">
+        {movies.poster && (
+            <img scr = {movies.poster} alt={movies.title}
+            className="mx-auto h-64 rounded-lg onject-cover shdow-md" />
+        )}
+
+      </div>
+
       <h2 className="mt-4 text-2xl font-bold text-slate-800">
         {movie.title} <span className="text-slate-400">({movie.year})</span>
       </h2>
