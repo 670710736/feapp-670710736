@@ -30,7 +30,7 @@ function MovieGallery() {
 
       <div className="mt-4 .flex flex-col gap-6 md:flex-row">
         {movie.poster && (
-            <img scr = {movie.poster} alt={movie.title}
+            <img src = {movie.poster} alt={movie.title}
             className="mx-auto h-64 rounded-lg object-cover shdow-md" />
         )}
       </div>
